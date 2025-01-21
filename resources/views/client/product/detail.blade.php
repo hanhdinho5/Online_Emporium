@@ -62,8 +62,10 @@
                             <div class="desc" style="line-height: 7px">
                                 {!! $product_detail->detail !!}
                                 <p>Chọn màu: </p>
-                                <span class="btn btn-success">Xanh</span> <span class="btn btn-danger">Đỏ</span>
-                                <span class="btn btn-warning">Vàng</span> <span class="btn btn-secondary">Đen</span>
+                                <span class="btn btn-success" style="width:4rem">Xanh</span> <span class="btn btn-danger"
+                                    style="width:4rem">Đỏ</span>
+                                <span class="btn btn-warning" style="width:4rem">Vàng</span> <span class="btn btn-secondary"
+                                    style="width:4rem">Đen</span>
                             </div>
                             <div class="num-product">
                                 <span class="title">Sản phẩm: </span>
