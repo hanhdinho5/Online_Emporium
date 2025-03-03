@@ -106,7 +106,7 @@
                                     <div id="cart-wp" class="fl-right">
                                         <a href="{{ route('cart.show') }}" id="btn-cart" class="text-white">
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span id="num">{{ Cart::count() }}</span>
+                                            <span id="num">{{ Cart::count() == 0 ? '' : Cart::count() }}</span>
                                         </a>
                                         <div id="dropdown">
                                             <p class="desc">Có <span id="total-title">{{ Cart::count() }} sản
@@ -142,7 +142,7 @@
                                 chính sách ưu đãi cực lớn cho khách hàng có thẻ thành viên.</p>
                             <div id="payment">
                                 <div class="thumb">
-                                    <img src="public/images/img-foot.png" alt="">
+                                    <img src="public/client.css/images/img-foot.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -315,6 +315,7 @@
                             $('p.price').text(data.total + 'đ');
                         },
                         error: function(xhr, ajaxOptions, thrownError) {
+                            // console.error(xhr.responseText);
                             alert(xhr.status);
                             alert(thrownError);
                         }

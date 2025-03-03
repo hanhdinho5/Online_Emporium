@@ -50,7 +50,7 @@
                                 <li>
                                     <a href="{{ route('product.detail', [$item->slug, $item->id]) }}" title=""
                                         class="thumb">
-                                        <img src="{{ url($item->img) }}">
+                                        <img src="{{ url($item->img) }}" style="width: 1910px; height: 129px;">
                                     </a>
                                     <a href="?page=detail_product" title=""
                                         class="product-name">{{ $item->name }}</a>
